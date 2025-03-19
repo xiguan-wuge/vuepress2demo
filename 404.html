@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>VuePress</title><meta name="description" content="My first VuePress Site">
+    <link rel="stylesheet" href="/assets/css/styles.647ad47b.css">
+    <link rel="preload" href="/assets/js/runtime~app.256644f9.js" as="script"><link rel="preload" href="/assets/css/styles.647ad47b.css" as="style"><link rel="preload" href="/assets/js/246.8a557186.js" as="script"><link rel="preload" href="/assets/js/app.2592e517.js" as="script">
+    <link rel="prefetch" href="/assets/js/get-started.html.ff391fed.js" as="script"><link rel="prefetch" href="/assets/js/index.html.a5b7d5c8.js" as="script"><link rel="prefetch" href="/assets/js/404.html.b2788d88.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-8d4ed414><main class="page" data-v-8d4ed414><div vp-content data-v-8d4ed414><h1 data-v-8d4ed414>404</h1><blockquote data-v-8d4ed414>How did we get here?</blockquote><a class="route-link" href="/" data-v-8d4ed414>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script src="/assets/js/runtime~app.256644f9.js" defer></script><script src="/assets/js/246.8a557186.js" defer></script><script src="/assets/js/app.2592e517.js" defer></script>
+  </body>
+</html>
