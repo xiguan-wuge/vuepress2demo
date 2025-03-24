@@ -32,7 +32,12 @@ export default {
 :::
 
 ## 这是jsx用法
+
 <JsxDemo1></JsxDemo1>
+
+<!-- <JsxDemo2></JsxDemo2> -->
+
+
 <!-- :::demo
 ```vue
 <script>

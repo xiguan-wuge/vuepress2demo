@@ -59,6 +59,16 @@ export default defineUserConfig({
           presets: ['@babel/preset-env'],
           plugins: ['@vue/babel-plugin-jsx']
         });
+
+        config.module
+        .rule('scss')
+        .test(/\.scss$/)
+        .use('sass-loader')
+        .loader('sass-loader')
+        .options({
+          warnRuleAsWarning: false,
+        });
+      return config;
     }
   }) : viteBundler(),
 
